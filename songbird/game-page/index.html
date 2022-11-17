@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songbird</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="../start-pages/style.css" rel="stylesheet">
+    <link href="../game-page/style.css" rel="stylesheet">
+    <link type="Image/x-icon" href=".../songbird/img/bird-logo.png" rel="icon">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__img logo" src="../img/bird-logo.png" alt="">
+        </div>
+        <nav class="navigation">
+            <a href="../start-pages/index.html" class="navigation__href">Главная</a>
+            <a href="" class="navigation__href">Результаты</a>
+            <a href="" class="navigation__href">Играть</a>
+        </nav>
+    </header>
+    <div class="score">
+        <h2 class="score__text">Score: 0</h2>
+    </div>
+    <div class="container">
+        <div class="container__level">
+            <div class="level__item level__active">
+                <p class="level__text">Разминка</p>
+            </div>
+            <div class="level__item">
+                <p class="level__text">Воробьиные</p>
+            </div>
+            <div class="level__item">
+                <p class="level__text">Лесные птицы</p>
+            </div>
+            <div class="level__item">
+                <p class="level__text">Певчие птицы</p>
+            </div>
+            <div class="level__item">
+                <p class="level__text">Хищные птицы</p>
+            </div>
+            <div class="level__item">
+                <p class="level__text">Морские птицы</p>
+            </div>
+        </div>
+        <div class="container__question">
+            <img class="bird__img" src="../img/bird.jpg" alt="">
+            <div class="question__item">
+                <h2 id="bird-name__question" class="birds-name">******</h2>
+                <audio id="audio__question" src="" controls></audio>
+            </div>
+        </div>
+        <div class="container__answer">
+            <div class="answers">
+                <audio id="soundtrue" src="../mp3/true.mp3"></audio>
+                <audio id="soundfalce" src="../mp3/false.mp3"></audio>
+                <div class="answer">
+                    <input class="radio" type="radio" id="" name="" value="" >
+                    <label for="huey"></label>
+                </div>
+                <div class="answer">
+                    <input class="radio" type="radio" id="" name="" value="" >
+                    <label for="huey"></label>
+                </div>
+                <div class="answer">
+                    <input class="radio" type="radio" id="" name="" value="" >
+                    <label for="huey"></label>
+                </div>
+                <div class="answer">
+                    <input class="radio" type="radio" id="" name="" value="" >
+                    <label for="huey"></label>
+                </div>
+                <div class="answer">
+                    <input class="radio" type="radio" id="" name="" value="" >
+                    <label for="huey"></label>
+                </div>
+                <div class="answer">
+                    <input class="radio" type="radio" id="" name="" value="" >
+                    <label for="huey"></label>
+                </div>
+            </div>
+            <div class="answer__information none">
+                <div class="information__container">
+                    <img id="birdInformation" class="bird__img" src="../img/bird.jpg" alt="">
+                    <div class="information__name">
+                        <h3 id="birds-name" class="birds-name"></h3>
+                        <p class="species"></p>
+                        <audio id="audio-description" src="" controls></audio>
+                    </div>
+                </div>
+                <div class="description none">
+                    <p class="description__text"></p>
+                </div>
+            </div>
+            <h2 class="text">Послушайте плеер.
+                Выберите птицу из списка</h2>
+        </div>
+        <button disabled class="next">next level</button>
+    </div>
+    <footer class="footer">
+        <div class="footer__logo">
+            <a href="https://rs.school/js/">
+                <img class="footer__img logo__school" src="../img/rs_school_js.svg" alt="">
+            </a>
+            <a href="https://github.com/astap13">
+                <img class="footer__img logo__github" src="../img/github-logo.png" alt="">
+            </a>
+        </div>
+    </footer>
+    <script src="../game-page/script.js"></script>
+</body>
+</html>

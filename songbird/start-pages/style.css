@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+.header {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+    height: 80px;
+    background: #A87FF3;
+    box-shadow: 0px 0px 50px -10px rgba(151, 71, 255, 0.08);
+    border-radius: 100px;
+}
+
+.header__logo {
+    position: absolute;
+}
+
+.logo {
+    width: 97px;
+    margin-left: 10px;
+}
+
+.navigation {
+    width: 80%;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.navigation__href {
+    font-family: 'Didact Gothic', sans-serif;
+    display: block;
+    width: 180px;
+    height: 40px;
+    background: #F4EFFE;
+    border-radius: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #737373;
+    font-size: 25px;
+}
+
+.footer {
+    margin-top: 30px;
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 0px 50px -10px rgba(151, 71, 255, 0.08);
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: center;
+    gap: 10rem; 
+    margin-top: 18px;
+}
+
+.footer__img {
+    height: 40px;
+}
+
+.container {
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(41, 41, 41, 0.2);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 40px;
+}
+
+.title {
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+    @media screen and (max-width: 1000px) {
+        .header {
+            height: 40px;
+        }
+        .logo {
+            width: 49px;
+        }
+        
+        .navigation__href {
+            width: 100px;
+            height: 25px;
+            background: #F4EFFE;
+            border-radius: 40px;
+            text-align: center;
+            text-decoration: none;
+            color: #737373;
+            font-size: 16px;
+        }
+
+        .navigation {
+            width: 80%;
+            max-width: 400px;
+        }
+
+    }
+    @media screen and (max-width: 600px) {
+        .navigation__href {
+            width: 100px;
+            height: 25px;
+            border-radius: 40px;
+            text-align: center;
+            text-decoration: none;
+            color: #737373;
+            font-size: 14px;
+        }
+
+        .navigation {
+            width: 73%;
+            max-width: 400px;
+        }
+        
+        .logo {
+            width: 30px;
+            margin-top: 3px;
+        }
+
+        .footer {
+            height: 56px;
+        }
+
+        .footer__logo {
+            margin-top: 8px;
+        }
+    }
